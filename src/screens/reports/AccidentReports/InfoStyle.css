@@ -1,0 +1,78 @@
+/*
+==================================================================
+# Name: R U Bharti
+# Component: InfoStyle.css
+# Status: Closed
+# Description: CSS for Info card
+# Import to: AccidentInfo and SosInfo
+==================================================================
+*/
+
+.info_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info_main_heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.info_section {
+    padding: 5px 10px
+}
+
+.info_heading {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.detail_card {
+    background-color: white;
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.24);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.detail_wrap {
+    width: 23%;
+    font-size: 14px;
+}
+
+.detail_wrap .key {
+    font-size: 13px;
+}
+
+.detail_wrap .value {
+    font-weight: 500;
+}
+
+.view_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.image_contain>img {
+    width: 50vw;
+    height: 90vh
+}
+
+@media screen and (max-width: 768px) {
+    .detail_wrap {
+        width: 100%;
+    }
+
+    .image_contain>img {
+        width: 80vw;
+        height: auto,
+    }
+}

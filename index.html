@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./src/assets/logo4.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Font Link -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- <script src="https://apis.mapmyindia.com/advancedmaps/v1/d088323a3a8ae9d1e8a08aa36f2b8a5c/map_load?v=1.5"></script> -->
+    <script src="https://apis.mappls.com/advancedmaps/api/d088323a3a8ae9d1e8a08aa36f2b8a5c/map_sdk?v=3.1&layer=vector&callback=initMmiMap"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Vahan Shakti</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <div id="mmiMap" style="height: 78.5vh;width: 100%;border-radius: 12px;border: 2px solid rgb(206, 210, 227) !important;position: relative;overflow: hidden;margin-top: 4.5px;display: none;">
+
+    </div> -->
+    <div class="text-center">
+    
+    <script type="module" src="/src/main.jsx"></script>
+    
+    
+<script >       
+  window.mmiState = {
+    isInitialised: false,
+    mmiMapId: 'mmiMap',
+    mmiMap: null,
+    mmiLayerGroup: null,
+    mmiMapEl: null,
+  };
+  
+  function initMmiMap() {
+    window.mmiState.mmiMap = new mappls.Map(
+      window.mmiState.mmiMapId,
+      {
+        zoom: 3,
+        center: [25, 80],
+        zoomControl: true,
+        location: true,
+        resizable:true
+      }
+    );
+    window.mmiState.mmiMap.resize();
+
+    window.mmiState.mmiMap.addListener('load', function () {
+          mappls.traffic({ map: window.mmiState.mmiMap });
+          window.mmiState.mmiMap.resize();
+      })
+
+    // window.mmiState.mmiLayerGroup = new window.L.FeatureGroup();
+    //window.mmiState.mmiLayerGroup.addTo(window.mmiState.mmiMap);
+    window.mmiState.mmiMapEl = document.getElementById(
+      window.mmiState.mmiMapId
+    );
+
+    window.mmiState.isInitialised = true;
+    console.log('created mapplsMAP');
+  }
+
+  function moveMmiMapTo(destEl) {
+    destEl.insertBefore(window.mmiState.mmiMapEl, null);
+    window.mmiState.mmiMap.resize();
+  }
+  function resize() {
+    window.mmiState.mmiMap.resize();
+  }
+</script>
+</html>

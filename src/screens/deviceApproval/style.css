@@ -1,0 +1,105 @@
+
+
+.table-card-cell {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding: 7px;
+    gap: 2px 0px;
+}
+
+.table-card-key {
+    grid-column: span 12 / span 12;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.table-card-value {
+    grid-column: span 12 / span 12;
+    font-weight: 500;
+}
+
+.id_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px 0px;
+}
+
+.id_top_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 5px;
+}
+
+.id_top_content_container {
+    background-color: white;
+    margin:2px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+    flex-wrap: wrap;
+    border: 1px solid gainsboro;
+}
+
+.id_map_container {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.full_width {
+    width: 100%;
+}
+
+.id_bottom_container {
+    margin-bottom: 10px;
+    width: 98%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+    flex-wrap: wrap;
+}
+
+/* Media Query */
+@media only screen and (max-width: 767px) {
+
+    .id_top_content_container {
+        width: 100%;
+    }
+
+    .table-card-cell {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    
+    .id_top_content_container {
+        width: 100%;
+    }
+
+    .table-card-cell {
+        width: 23%;
+    }
+
+    .full_width {
+        width: 100%;
+    }
+}
+
+  

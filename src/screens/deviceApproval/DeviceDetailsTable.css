@@ -1,0 +1,39 @@
+
+.table-card-items {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+  
+  
+  .fetch-button {
+    padding: 5px 10px;
+    background-color: #007bff; /* Example background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+.table-cell-action {
+    max-width: 200px;
+    max-height: 100px; /* Adjust the max-height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.table-body2 .table-cell:nth-child(2) {
+    width: 15%; /* Adjust the width as needed */
+}
+.table-body2 .table-cell:nth-child(1) {
+    width: 2%; /* Adjust the width as needed */
+}
+.table-body2 .table-cell:nth-child(3) {
+    width: 22%; /* Adjust the width as needed */
+}
+.saves-button {
+    padding: 5px 10px;
+    background-color: #047904; /* Example background color */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

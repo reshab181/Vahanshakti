@@ -1,0 +1,156 @@
+/*
+==================================================================
+# Component: AccidentInfoForm.css
+# Status: Closed
+# Description: CSS for forms
+# Import to: AccidentInfoForm.jsx, DodForm.jsx, SosInfoForm.jsx
+==================================================================
+*/
+
+/* Dialog Box */
+.dialog_container {
+    width: 97vw;
+    height: auto;
+    border: 1px solid rgb(141, 141, 141);
+}
+
+.cross_button {
+    position: absolute;
+    top: 3px;
+    right: 4px;
+}
+
+.button_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.button_style {
+    border: 1px solid rgba(195, 195, 195, 0);
+    padding: 3px 10px;
+    color: rgba(0, 0, 0, 0.762);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.camera_image_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.camera_container, .image_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.image_container {
+    margin-bottom: 10px;
+}
+
+/* Form Design */
+
+.form_heading {
+    font-size: 20px;
+    margin: 5px 5px;
+    text-align: center;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.fr_form {
+    padding: 0px 5px;
+    margin-top: 10px;
+}
+
+.fr_form * {
+    box-sizing: border-box;
+}
+
+.fr_form section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fr_form .form_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.form_wrap>select {
+    border: 1px solid gainsboro;
+    padding: 10px 5px;
+}
+
+.form_wrap>select:focus, .form_wrap>select:active {
+    border: 1px solid gainsboro;
+}
+
+.form_wrap > input, .form_wrap > select {
+    font-weight: 500;
+}
+
+.form_sub_heading {
+    font-size: 16px;
+    margin-bottom: -2px;
+}
+
+.fr_form > section > input[type='button'] {
+    font-size: 12px;
+    width: max-content;
+    padding: 5px 10px;
+    letter-spacing: 0.7px;
+}
+
+.add_button {
+    background-color: #348bff;
+    color: white;
+    border: 1px solid #006eff;
+    border-radius: 3px;
+}
+
+.add_button:hover {
+    background-color: #086df2;
+}
+
+.details_card {
+    position: relative;
+    border: 1px solid gainsboro;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.details > .key {
+    width: 30%;
+}
+
+.details > .value {
+    width: 70%;
+    font-weight: 500;
+}
+
+.action_buttons {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}

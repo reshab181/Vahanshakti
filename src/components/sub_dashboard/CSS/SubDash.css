@@ -1,0 +1,749 @@
+/* reports */
+
+.reports-menu {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.reports-menu h2{
+  text-align: center;
+}
+
+.reports-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reports-menu li {
+  margin-bottom: 5px;
+  font-size: 17px;
+  padding: 5px;
+  color: rgb(24, 24, 99);
+  width: 20%;
+}
+
+.reports-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.reports-menu li:hover {
+  background-color: rgb(91, 100, 123);
+  color: white;
+}
+
+
+
+/* COMMON Pagination styles */
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.page-numbers li {
+  list-style: none;
+  margin-right: 5px;
+}
+
+.page-numbers button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.page-numbers button.active-page {
+  background-color: rgb(13, 58, 132);
+  color: #fff;
+  border: 1px solid rgb(13, 58, 132);
+}
+
+.page-numbers span {
+  padding: 5px 10px;
+}
+.excel-export-button{
+  background: none;
+  outline: none;
+  border: none;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 1.0rem;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+
+
+
+  /*(1) - DEVICE-TEMPERED COMPONENT CSS */
+  
+  .device-tempered-container{
+    gap: 10px;
+    margin-top: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .device-tempered-header-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .device-tempered-header-section h3{
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Table styles */
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .data-table{
+    overflow-x: auto;
+  }
+  .data-table table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    background-color: white;
+  }
+  
+  .data-table table th,
+  .data-table table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .data-table table th {
+    background-color: rgb(13, 58, 132);
+    color: #fff;
+  }
+
+
+/* SUB-DEVICE SENDING ALERT REPORT COMPONENT CSS */
+
+.device-sending-container{
+  margin-top: 2rem;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.device-sending-container-nav {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.device-sending-container-nav label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.select-label-bottom-margin{
+  margin-bottom: 5px;
+}
+.device-sending-container-nav select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+  align-items: center;
+}
+
+
+.tab-buttons {
+  /* display: flex;
+  margin-bottom: 10px; */
+}
+
+.tab-buttons button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #5b6adc;
+}
+
+.tab-buttons button.active {
+  background-color: white;
+  color: black;
+}
+.tab-content {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.tabular-content-container h3{
+  margin: 0;
+  padding: 0;
+}
+.tabular-content-header-section{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tabular-content-table-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tabular-content-data-table{
+  overflow-x: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tabular-content-data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  background-color: white;
+}
+
+.tabular-content-data-table table th,
+.tabular-content-data-table table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabular-content-data-table table th {
+  background-color: rgb(13, 58, 132);
+  color: #fff;
+}
+.items-per-page select {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+
+/* (3) - ESIM VALIDITY COMPONNENT CSS */
+
+.ESIM-validity-container{
+  margin-top: 2rem;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+.ESIM-validity-header-section{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ESIM-validity-header-section h3{
+  margin: 0;
+  padding: 0;
+}
+.esim-search label{
+  margin-right: 10px;
+  font-weight: bold;
+}
+.esim-search select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+/* (4) - SUB DEVICE WISE TOTAL ALERTS COMPONENT CSS*/
+
+.device-TotalAlert-container{
+  margin-top: 2rem;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+.device-TotalAlert-container-nav {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.device-TotalAlert-container-nav label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.select-label-bottom-margin{
+  margin-bottom: 5px;
+}
+.device-TotalAlert-container-nav select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 250px;
+  align-items: center;
+}
+.table-content-header-section h3{
+  margin: 0;
+  padding: 0;
+}
+.table-content-header-section{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+.table-content-table-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.table-content-data-table{
+  overflow-x: auto;
+}
+.table-content-data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+  background-color: white;
+}
+
+.table-content-data-table table th,
+.table-content-data-table table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-content-data-table table th {
+  background-color: rgb(13, 58, 132);
+  color: #fff;
+}
+
+
+/* (5) - VEHICLE MAP SEARCH COMPONENT CSS */
+
+.sub-vehicle-map-container{
+  position: relative;
+}
+.sub-vehicle-search-content{
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 350px;
+  height: 400px;
+  background-color: white;
+}
+.sub-vehicle-search-content input{
+  width: 90%;
+}
+
+
+
+/* SUB-DASH HEALTH DASHBOARD CSS */
+
+.left {
+  flex: 1;
+}
+.vendor-select {
+  width: 40%;
+  padding: 5px;
+  border-color: #ccc;
+  border-radius: 4px;
+}
+.right {
+  display: flex;
+  gap: 10px;
+}
+.Health-data-vehicle{
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc; /* Add border */
+  padding: 10px; /* Add padding for spacing */
+}
+.left select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+.download-btn-container{
+  margin: 20px;
+}
+.right .download-btn-container button {
+  background-color: #4AC95B;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.health-monitoring-table h2 {
+  font-size: 20px;
+  margin:10px;
+}
+.health-monitoring-table {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.health-monitoring-table h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.monitoring-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 8px;
+  /* transition: margin-left 0.3s ease; */
+}
+.monitoring-table th,
+.monitoring-table td {
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+.monitoring-table th {
+  background-color:rgb(13, 58, 132);
+  color: #fff;
+}
+.search-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.search-bar .left-side-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar label {
+  margin-right: 10px;
+}
+.search-bar select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.search-bar .right-side-bar input[type="text"] {
+  position: absolute;
+  right: 15px;
+  margin-top: -13px;
+  width: auto; /* Remove width to allow input to adjust based on content */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.paginations {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.paginations button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.paginations button.active {
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+/* SUB-DASH EMERGENCY COMPONENT CSS */
+.EmergencyAlert-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.emergency-input,
+.legends {
+  flex: 1;
+  gap: 20px;
+}
+
+.emergency-input {
+  display: flex;
+  align-items: center;
+}
+
+.emergency-input label {
+  margin-right: 10px;
+}
+
+.fetch-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.legend-icon {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.legend-success {
+  color: green;
+}
+
+.legend-failed {
+  color: red;
+}
+
+.legend-pending {
+  color: orange;
+}
+
+.emergency-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.emergency-table th {
+  background-color:rgb(13, 58, 132);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.emergency-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.emergency-table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.emergency-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.emergency-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 10px;
+  margin: 10px;
+}
+
+.scatter-plot {
+  flex: 1;
+  margin-right: 50px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.table-list {
+  flex: 1; 
+}
+
+#customers {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+#customers th, #customers td {
+  padding: 10px;
+  text-align: left;
+}
+
+#customers th {
+  background-color:rgb(13, 58, 132);
+  color: #fff;
+}
+
+.excel-emergency{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+
+.combined-container{
+  padding: 8px 16px 8px 0px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.emergency-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side-bars {
+  display: flex;
+  align-items: center;
+}
+
+.right-side-bars {
+  flex-grow: 1;
+  text-align: right;
+}
+
+label {
+  margin-right: 5px;
+}
+
+
+
+/* MINI DASHBOARD CSS */
+
+.mini-dashboard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.box {
+  width: calc(16.66% - 10px);
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  /* margin: 10px; */
+}
+
+/* Media query to make the boxes full width on smaller screens */
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+}
+.mini-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Styles for the bar chart */
+.bar-chart {
+  width: 49%;
+  height: 70vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+  margin:-14px;
+}
+
+/* Styles for the pie chart container */
+.pie-charts {
+  width: 51.2%; 
+  height: 70vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top:-14px
+
+}
+
+.pie-charts h3 {
+  
+  margin-bottom: 10px;
+}
+
+.horizontal-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.paragraph-container {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.blue-background-paragraph {
+  background-color: #3498db;
+  color: #fff;
+}
+.data-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data-item {
+  border-right: 1px solid #ccc;
+  padding-right: 10px; 
+  margin-right: 10px; 
+}
+
+.data-item:last-child {
+  border-right: none;
+}
+
+

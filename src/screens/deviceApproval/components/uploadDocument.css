@@ -1,0 +1,102 @@
+/* DdDetails.css */
+.dd-details-container{
+    border: 1px solid;
+    margin: 10px;
+    padding: 15x;
+}
+
+.dd-form-tags {
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.dd-form-heading-para {
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.ddbtn {
+  background-color: #23a6ce;
+  color: white;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: flex;
+  justify-content:flex-end;
+  margin-left: auto;
+}
+
+.ddbtn:hover {
+  background-color: #347ea0;
+}
+
+/* Upload Document CSS */
+.uplode-document-dd {
+  /* border: 1px solid; */
+  margin-top: 10px;
+  /* padding: 20px;
+  margin: 10px; */
+}
+.uplode-document-dd .p {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.uplode-document-dd-item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-document-box {
+  height: 35vh;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  border: 1px solid #ddd;
+}
+
+.upload-document-right {
+  /* height: 35vh; */
+  flex: 1;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 10px;
+}
+.upload-document-right p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.upload-document-box h2 {
+  margin-bottom: 10px;
+}
+
+.upload-document-box p {
+  margin-bottom: 20px;
+}
+
+.save-button {
+  position: relative;
+  left: 0;
+  transform: none;
+  margin-top: 20px;
+}

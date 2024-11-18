@@ -1,0 +1,28 @@
+
+
+ .filter_container {
+    width: 97.2%;
+}
+
+select>option {
+    font-weight: 500;
+}
+
+.errorStyle {
+    border: 1px solid rgba(255, 0, 0, 0.618) !important;
+    color: rgba(255, 0, 0, 0.618) !important;
+}
+
+.errorStyle::placeholder {
+    color: rgba(255, 0, 0, 0.618) !important;
+}
+
+.filter_container>.field_wrapper>select {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .deviceReportFieldWrapper {
+        width: 15% !important;
+    }
+}

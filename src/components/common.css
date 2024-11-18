@@ -1,0 +1,649 @@
+.scroll_table::-webkit-scrollbar {
+  display: none;
+}
+.Table-content {
+  width: 99%; 
+
+  margin: auto; 
+  overflow: hidden; 
+  border: 3px solid white;
+  border-radius: 20px;
+  box-sizing: border-box; 
+
+
+}
+
+
+
+.table-striped {
+  width: 100%;
+  background-color: #F6F7FB;
+}
+
+.table-striped td,
+.table-striped th {
+  padding: 10px;
+} 
+
+
+.table-striped {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #F6F7FB;
+}
+
+  .table-striped {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #F6F7FB;
+    /* border-radius: 10px; */
+  }
+  
+  .table-striped th {
+    background-color: #007bff;
+    color: #000;
+    padding: 12px;
+  
+  }
+  
+  .table-striped td {
+    padding: 12px;
+    /* border-radius: 10px; */
+    /* margin-top: 10px; */
+    /* width: 99.5%; */
+    /* border: 1px solid #E1E3EB */
+  }
+  
+  .table-striped tbody tr {
+    margin-top: 10px;
+   border: 1px solid #ddd; 
+    /* border-radius : 10px; */
+  }
+thead {
+  font-weight: bold;
+  text-align: left;
+  font-size: 13px;
+  background-color: #babbbd;
+  /* border-radius: 10px; */
+}
+
+thead th {
+  padding: 8px;
+  color: #2c2e31;
+  text-transform: capitalize;
+  /* border-radius: 10px; */
+}
+
+tbody {
+  font-size: 0.875rem;
+}
+
+tbody tr {
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 20;
+}
+
+
+.table-striped th,
+.table-striped td {
+  padding: 12px; 
+  text-align: left;
+  border-bottom: 1px solid #ddd; 
+  border-bottom: 5px solid #f9f9f9;
+}
+.scroll_table {
+  
+  border: 1px solid #E1E3EB;
+  /* border-radius: 10px; */
+  background-color: #fff;
+  width: 100%;
+  height:100%
+}
+
+
+
+.table-striped th:not(:first-child),
+.table-striped td:not(:first-child) {
+  border-left: none;
+}
+
+
+.table-listp {
+  font-weight: 600;
+  margin: 10px;
+}
+.table-striped tr {
+ 
+  border-radius: 10px;
+  margin-bottom: 10px; 
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+  .detail-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 14px;
+  }
+
+  .col,
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+  }
+
+  .scroll_table>table {
+    display: none;
+  }
+
+  .table-card {
+    display: block;
+  }
+
+  .manufacturer-details,
+  .card {
+    margin: 0px 5px;
+  }
+
+ .table-list {
+  margin: 5px;
+}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .table-list {
+    margin: 0px 5px 5px 5px;
+  }
+
+  .manufacturer-details,
+  .card {
+    margin: 10px 20px;
+  }
+
+  .detail-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 14px;
+  }
+
+  .col,
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4px
+  }
+
+  .table-card {
+    display: none !important;
+  }
+
+  table {
+    display: table;
+  }
+
+}
+.user-button-mnf{
+  border: none;
+  background: none;
+  /* border: 1px solid black; */
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(42, 133, 255);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+
+.loader-container {
+  margin-top: 100px;
+  width:calc(100vw - 70px);
+  position: relative;
+
+}
+.loader-container-expand{
+  margin-top: 100px;
+  width:calc(100vw - 240px);
+  height:calc(100vh - 150px);
+  position: relative;
+
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  /* height:calc(100vh); */
+  /* width:calc(100vw - 230px); */
+}
+
+
+@media screen and (max-width: 600px) {
+  .loader {
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+
+  }
+}
+
+h3,
+.heading {
+  color: rgb(44, 44, 44) !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+col>p:first-child {
+  color: rgb(64, 64, 64) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+col>p:last-child {
+  color: rgb(88, 88, 88) !important;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.sub-heading {
+  color: rgb(64, 64, 64) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.text {
+  color: rgb(88, 88, 88) !important;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.manufacturer-details,
+.card {
+  background-color: white;
+  padding: 14px 14px;
+  border: 1px solid rgb(208, 208, 208);
+  filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 10%));
+  
+}
+
+
+
+.col > p:first-child {
+  font-size: 0.9rem !important;
+}
+
+.col > p:last-child {
+  font-size: 0.9rem !important;
+}
+
+
+
+.download-btn-container {
+  display: flex;
+}
+
+.download-btn-container button {
+  background: none;
+  outline: none;
+  border: none;
+  border: 1px solid green;
+  padding: 5px 15px;
+  color: green;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+.download-btn-container button:hover {
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+
+.export-button {
+  background-color: rgba(0, 128, 0, 0.8);
+  outline: none;
+  padding: 3px 10px;
+  border: 1px solid green;
+  color: white;
+  border-radius: 2px;
+}
+
+.export-button:hover {
+  background-color: rgba(0, 128, 0, 1);
+}
+
+.bg-warning {
+  background-color: rgb(160, 209, 64);
+  display: flex;
+  align-items: center;
+  width: 100vh;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid white;
+}
+
+.bg-light {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100vh;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid white;
+}
+
+.map-roles-text {
+  color: rgb(52, 52, 52);
+}
+
+
+
+/* DetailModal.css */
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  max-height: 100%;
+  overflow: auto;
+}
+.cancel-form-register-mnf{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 3px 5px 1px 5px;
+  border-radius: 3px;
+}
+
+
+.modal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.modal-content th,
+.modal-content td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.close-modal-btn {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+
+.detail-icon {
+  cursor: pointer;
+  color: blue;
+}
+
+/* Other styles for your components */
+
+.close-modal-btn {
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.search-feild {
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid rgb(210, 209, 209);
+  width: 30%;
+  margin-bottom: 4px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+}
+
+/* PAGINATOR CSS */
+/* DynamicTable.css */
+
+.paginators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px ;
+}
+
+.paginators button {
+  padding: 5px 10px;
+  /* margin: 0 5px; */
+  cursor: pointer;
+  border: none;
+  background: #2A85FF;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.paginators span {
+  margin: 0 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.paginators select {
+  margin-left: 10px;
+  padding: 5px;
+  width: 70px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 8px;
+}
+
+/* Table contol */
+.table-control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paginator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 10px;
+}
+
+.search-bar {
+  width: max-content;
+}
+
+.search-bar input {
+  outline: none !important;
+  border: none;
+  outline: none;
+  background: none;
+  border: 1px solid rgb(210, 209, 209);
+  margin-bottom: 4px;
+  padding: 5px ;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-bottom: -14px;
+  margin-left: 10px;
+    /* margin-top: 5px; */
+}
+
+
+/* File Loader CSS */
+.file-upload-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4cb0e6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.user-create-btn {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background: #0651a0;
+  color: #fff;
+  border-radius: 5px
+}
+
+.available {
+  color: green;
+}
+
+.not-available {
+  color: red;
+}
+
+
+/* Multiple-Selection */
+.roles-slection-container {
+  display: flex;
+  align-items: center;
+}
+
+.roles-selection-checkbox {
+  display: flex;
+  gap: 20px;
+}
+
+.roles-slection-checkbo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.roles-slection-label {
+  font-size: 18px;
+  color: rgb(48, 48, 48);
+}
+
+.table-card {
+  margin-top: 10px;
+}
+
+
+.user-create-btn, .table-card-button, .export-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.user-create-btn:hover, .table-card-button:hover, .export-button:hover {
+  background-color: #45a049;
+}

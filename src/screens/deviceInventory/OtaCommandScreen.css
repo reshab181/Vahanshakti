@@ -1,0 +1,145 @@
+
+/* Main container css */
+.ota_main_container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Info and form grouped section css */
+.ota_section {
+    margin-top: 30px;
+    width: max-content;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header css */
+.ota_section>header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+/* Info section css */
+.ota_info_section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Info wrapper css */
+.ota_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 30%;
+}
+
+/* Info name css */
+.ota_name {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Info value css */
+.ota_value {
+    font-weight: 600;
+}
+
+/* Form input box wrapper css */
+.ota_form_wrapper {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Form input box wrapper css extended */
+.ota_form_wrapper_row {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Form lable css */
+.ota_form_wrapper>label {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* Form input and select box css */
+.ota_form_wrapper>input,
+.ota_form_wrapper>select {
+    border: 1px solid gainsboro;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    outline: none;
+}
+
+/* Form input and select box's placeholder css */
+.ota_form_wrapper>input::placeholder,
+.ota_form_wrapper>select::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Geo fence range input boxes css */
+.ota_range>input {
+    width: 15%;
+}
+
+/* Form submit button css */
+.ota_submit_btn {
+    border: 1px solid green;
+    outline: none;
+    padding: 5px 12px;
+    width: max-content;
+    background-color: rgb(5, 156, 5);
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* Form submit button hover css */
+.ota_submit_btn:hover {
+    background-color: rgb(0, 105, 0);
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Info and form grouped css */
+    .ota_section {
+        margin: 5px;
+        margin-top: 40px;
+        width: auto;
+    }
+
+    /* Infor wrapper css */
+    .ota_info_wrapper {
+        width: 100%;
+    }
+
+    /* Geo fence range css */
+    .ota_range>input {
+        width: 100%;
+    }
+}

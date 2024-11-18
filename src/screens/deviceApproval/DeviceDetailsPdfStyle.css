@@ -1,0 +1,140 @@
+
+
+.print_container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.template_table_container {
+    border: 2px solid #e1e3eb;
+    border-radius: 15px;
+    overflow: clip;
+}
+
+.template_table_heading {
+    border-top: 2px solid #e1e3eb;
+    display: flex;
+    background-color: #f6f7fb !important;
+    border-bottom: 2px solid #e1e3eb;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+}
+
+.template_table_heading > span {
+    color: #201f27 !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.template_heading_container > p {
+    margin-top: -1rem;
+}
+
+.template_heading_container > p {
+    color: rgba(0, 0, 0, 0.45) !important;
+    font-weight: 600;
+}
+
+.template_table_cell {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.template_table_cell > div {
+    grid-column: span 6 / span 6;
+    padding: 10px 25px;
+    font-size: 12px !important;
+    color: #201f27 !important;
+    font-weight: 500;
+}
+
+.bt {
+    border-top: 2px solid #e1e3eb;
+}
+
+.br{
+    border-right: 2px solid #e1e3eb;
+}
+
+.bb {
+    border-bottom: 2px solid #e1e3eb;
+}
+
+.bl {
+    border-left: 2px solid #e1e3eb;
+}
+
+.template_bottom_note {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f6f7fb;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.template_note {
+    font-weight: 700;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.template_bottom_note > p {
+    color: rgba(0, 0, 0, 0.45) !important;
+    font-weight: 500;
+}
+
+.print_button {
+    margin: 0px 10px;
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.print_button:hover {
+    background-color: #fdaa40;
+    color: black;
+}
+
+@media print {
+
+    body {
+        visibility: hidden;
+        background-color: white;
+    }
+
+    button {
+        display: none !important;
+    }
+
+    #printable {
+        visibility: visible !important;
+        position: absolute;
+        top: 0;
+        width: 95vw;
+        height: 100vh;
+        left: 0;
+        z-index: 999 !important;
+    }
+
+    .template_bottom_note {
+        position: absolute;
+        bottom: 10rem;
+        width: 90vw;
+    }
+}
