@@ -363,8 +363,17 @@ export const ActivationComponentLive = (props) => {
       
       {loading ? (
         // <p style={{ textAlign: "center" }}>Loading...</p>
-        <LoadingWidget/>
-      ) :
+        <div className="shimmer-container">
+          {/* Render shimmer rows */}
+          {Array.from({ length: 10 }).map((_, rowIndex) => (
+            <div key={rowIndex} className="shimmer-row">
+              {Array.from({ length: 6 }).map((_, cellIndex) => (
+                <div key={cellIndex} className="shimmer-cell"></div>
+              ))}
+            </div>
+          ))}
+        </div>)
+       :
         <>
           {/* {props.infoData && <div className="id_container" style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"5px", backgroundColor:"white"}}> */}
           {props.infoData && <div className="id_containr" style={{display:"flex",gap:"5px", backgroundColor:"white"}}>

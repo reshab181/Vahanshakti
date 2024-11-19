@@ -337,7 +337,16 @@ export const EmpanelmentDetail = () => {
           ) : null}
 
           {
-            loading ? <LoadingWidget/> :
+            loading ?  (<div className="shimmer-container">
+              {/* Render shimmer rows */}
+              {Array.from({ length: 10 }).map((_, rowIndex) => (
+                <div key={rowIndex} className="shimmer-row">
+                  {Array.from({ length: 6 }).map((_, cellIndex) => (
+                    <div key={cellIndex} className="shimmer-cell"></div>
+                  ))}
+                </div>
+              ))}
+            </div>) :
             (usersList.length !==0 ? <>
               <div>
                 <div style={{ textAlign: "left", margin: "10px", fontWeight: "600" }}>
@@ -367,7 +376,16 @@ export const EmpanelmentDetail = () => {
               dataList={usersList} columns={column} />
           </div> */}
 
-          {loading ? <LoadingWidget/> : 
+          {loading ?  (<div className="shimmer-container">
+              {/* Render shimmer rows */}
+              {Array.from({ length: 10 }).map((_, rowIndex) => (
+                <div key={rowIndex} className="shimmer-row">
+                  {Array.from({ length: 6 }).map((_, cellIndex) => (
+                    <div key={cellIndex} className="shimmer-cell"></div>
+                  ))}
+                </div>
+              ))}
+            </div>) : 
             
             <div>
               <h3 style={{marginLeft:"10px"}}>View Document Details</h3>

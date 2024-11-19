@@ -106,7 +106,16 @@ export const ESIMProviderList = () => {
       </div>
       {loading ? (
         // Display a loading component while fetching data
-        <LoadingWidget/>
+        (<div className="shimmer-container">
+          {/* Render shimmer rows */}
+          {Array.from({ length: 10 }).map((_, rowIndex) => (
+            <div key={rowIndex} className="shimmer-row">
+              {Array.from({ length: 6 }).map((_, cellIndex) => (
+                <div key={cellIndex} className="shimmer-cell"></div>
+              ))}
+            </div>
+          ))}
+        </div>)
       ) : (
         <>
           <ListTable dataList={esimProviders} columns={column} heading="ESIM Provider List"/>

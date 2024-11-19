@@ -276,8 +276,17 @@ const Empanelment = () => {
           <AddUser entityName = {filteredData?.entityName}  userType="MNF" entityId = {MNFId}  navigateto={"/manufacturers/listManufacturer"} userDetails={{emailId:filteredData?.email, fullname:filteredData?.firstName + " " + filteredData?.lastName, contactNo:filteredData?.phoneNo, userName:entityCodeInput}}/>
         ) : loading ? (
         // Display a loading component while fetching data
-        <LoadingWidget/>
-      ) : <>
+        <div className="shimmer-container">
+          {/* Render shimmer rows */}
+          {Array.from({ length: 10 }).map((_, rowIndex) => (
+            <div key={rowIndex} className="shimmer-row">
+              {Array.from({ length: 6 }).map((_, cellIndex) => (
+                <div key={cellIndex} className="shimmer-cell"></div>
+              ))}
+            </div>
+          ))}
+        </div>)
+       : <>
         <ListTable dataList={allPendingData} columns={column}  heading="Manufacturer Onboarding Requests"/>
       </>}
       {showEntityCodeInput && (
